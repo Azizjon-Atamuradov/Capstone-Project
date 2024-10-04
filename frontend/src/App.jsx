@@ -9,25 +9,28 @@ import Appliances from "./pages/Appliances";
 import Clothing from "./pages/Clothing";
 import Nav from "./components/Nav";
 import Header from "./components/header"; 
-import Index from "./components"; 
+ 
 
 function App() {
  
-  const [products, setProducts] = useState(null)
+  
+
 
   const getProducts = async () => {
 
     const response = await axios.get("http://localhost:5000/api/products")
     const info = await response.data
     await setProducts(info)
-    
+    console.log(info);
+
      
 
   }
+  const [products, setProducts] = useState()
+   useEffect(() => {
+     getProducts()
+   },[])
 
-  useEffect(() => {
-    getProducts()
-  },[])
  
 
   return (
@@ -37,7 +40,7 @@ function App() {
   
     <Routes>
       
-    <Route path="/home" element={<Home/>}/>
+    <Route path="/home" element={<Home info={products}/>}/>
 
      
     <Route path="/electronics"   element={<Electronics />}/>
@@ -48,9 +51,9 @@ function App() {
 
     </Routes>
    
-   {products ? (
+   {/* {products ? (
     <Index info={products} /> ) : <p>No Products Available</p>
-   }
+   } */}
    
   
            

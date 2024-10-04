@@ -29,16 +29,22 @@ header {
    margin-top: 1em;
 }
 
-.productsContainer {
+.productContainer {
     border: solid green;
     height: 44vh;
+    margin: 1em;
 
 }
 
-.noteGoat {
-    border: solid yellow;
-    margin: 2em;
-    height: 22px;
-    border-width: 2px;
-    border-radius: 8px;
+ 
+
+.productPic{
+
+height: 150px;
+width: 150px;
+
+} 
+.mainProduct {
+   display: flex;
+   justify-content: space-around;
 }

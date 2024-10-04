@@ -1,34 +1,37 @@
-import React from 'react'
-import Product from './Product'
+// import React from 'react'
+// import Product from './Product'
 
 
-function index({info}) {
-  return (
-    <div>
+// function Index({info}) {
+//   return (
+//     <div>
 
 
-<div className="dashTitle">Products Dashboard</div>
-<div className="productsContainer">
+// <div className="dashTitle">Products Dashboard</div>
+// <div className="productsContainer">
 
-{Array.isArray(info) && info.map((product) => {
-    return (
-        <>
-            <Product key={product.id} data={product} />
-        </>
-    );
-})}
-
-
-
-
-</div>
+// {/* {Array.isArray(info.data) && info.data.map((product,i) => {
+//     return (
+//         <div key={i}>
+//             <Product key={product.id} data={product} />
+//         </div>
+//     );
+// })} */}
 
 
 
 
 
-    </div>
-  )
-}
 
-export default index
+
+// </div>
+
+
+
+
+
+//     </div>
+//   )
+// }
+
+// export default Index
