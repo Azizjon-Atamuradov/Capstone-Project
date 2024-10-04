@@ -3,17 +3,17 @@ import "./App.css";
 import {Route, Routes} from "react-router-dom"
 import axios from 'axios'
 
-import Electronics from "./components/Electronics";
-import Home from "./components/Home";
-import Appliances from "./components/Appliances";
-import Clothing from "./components/Clothing";
+import Electronics from "./pages/Electronics";
+import Home from "./pages/Home";
+import Appliances from "./pages/Appliances";
+import Clothing from "./pages/Clothing";
 import Nav from "./components/Nav";
 import Header from "./components/header"; 
-import Searchbar from "./Searchbar";
+import Index from "./components"; 
 
 function App() {
  
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState(null)
 
   const getProducts = async () => {
 
@@ -38,12 +38,21 @@ function App() {
     <Routes>
       
     <Route path="/home" element={<Home/>}/>
-    <Route path="/electronics" element={<Electronics/>}/>
+
+     
+    <Route path="/electronics"   element={<Electronics />}/>
+    
     <Route path="/appliances" element={<Appliances/>}/>
+
     <Route path="/clothing" element={<Clothing/>}/>
 
     </Routes>
-    <Searchbar/>
+   
+   {products ? (
+    <Index info={products} /> ) : <p>No Products Available</p>
+   }
+   
+  
            
     </>
   )
