@@ -8,15 +8,17 @@ import Home from "./components/Home";
 import Appliances from "./components/Appliances";
 import Clothing from "./components/Clothing";
 import Nav from "./components/Nav";
- 
+import Header from "./components/header"; 
+import Searchbar from "./Searchbar";
 
 function App() {
  
 
   return (
     <>
+    <Header/>
     <Nav/>
-
+  
     <Routes>
       
     <Route path="/home" element={<Home/>}/>
@@ -25,7 +27,7 @@ function App() {
     <Route path="/clothing" element={<Clothing/>}/>
 
     </Routes>
-     
+    <Searchbar/>
            
     </>
   )

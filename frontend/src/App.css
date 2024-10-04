@@ -6,14 +6,24 @@
    
    
   }
+header {
+    font-size: 30px;
+    margin-bottom: 1em;
 
+}
 
 .navbar {
     border: solid red;
     display: flex;
     justify-content: space-evenly;
-    width: 90vw;
-    border-radius: 50px;
+    width: 40vw;
+    border-radius: 60px;
+    margin-left: 460px;
     
 
 }
+
+
+
+
+
