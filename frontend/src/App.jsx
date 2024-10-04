@@ -1,7 +1,7 @@
-import { useState } from "react" 
+import { useState, useEffect } from "react" 
 import "./App.css";
 import {Route, Routes} from "react-router-dom"
-
+import axios from 'axios'
 
 import Electronics from "./components/Electronics";
 import Home from "./components/Home";
@@ -12,6 +12,22 @@ import Header from "./components/header";
 import Searchbar from "./Searchbar";
 
 function App() {
+ 
+  const [products, setProducts] = useState([])
+
+  const getProducts = async () => {
+
+    const response = await axios.get("http://localhost:5000/api/products")
+    const info = await response.data
+    await setProducts(info)
+    
+     
+
+  }
+
+  useEffect(() => {
+    getProducts()
+  },[])
  
 
   return (
