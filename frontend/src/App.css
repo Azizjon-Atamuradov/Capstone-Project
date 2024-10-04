@@ -1,0 +1,19 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem; 
+    text-align: center;
+   
+   
+  }
+
+
+.navbar {
+    border: solid red;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    border-radius: 50px;
+    
+
+}
