@@ -22,11 +22,72 @@ function App() {
     const info = await response.data
     await setProducts(info)
     console.log(info);
-
-     
-
   }
+
+const createProduct = async (e) => {
+  e.preventDefault()
+  const res = await axios.post("http://localhost:5000/api/products", createForm)
+  setProducts(() => [res.data.product, ...products])
+
+setCreateForm(()=>({
+  image:"",
+  name:"",
+  price:""
+}))
+
+}
+
+
+const updateCreateFormField = (e) => {
+  const {name, value} = e.target;
+
+  console.log({name, value});
+
+  setCreateForm(() => ({
+    ...createForm,
+    [name]: value,
+  }))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [products, setProducts] = useState()
+
+  // create form
+  const [createForm, setCreateForm] = useState({
+    image:"",
+    name:"",
+    price:""
+  })
+
+  ///// update form
+
+  const [updateForm, setUpdateForm] = useState({
+    _id: null,
+    image:"",
+    name:"",
+    price:""
+  })
+
+
+
    useEffect(() => {
      getProducts()
    },[])
@@ -37,6 +98,16 @@ function App() {
     <>
     <Header/>
     <Nav/>
+
+    
+
+
+
+
+
+
+
+
   
     <Routes>
       
