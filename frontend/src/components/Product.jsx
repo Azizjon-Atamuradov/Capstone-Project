@@ -18,7 +18,7 @@
 
 
 ////////////////////////
-
+//// 2 variant
 import React from 'react';
 
 function Product({ data, deleteFunc, editFunc }) {
@@ -55,3 +55,4 @@ function Product({ data, deleteFunc, editFunc }) {
 }
 
 export default Product;
+////////////////////
