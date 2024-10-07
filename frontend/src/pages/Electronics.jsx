@@ -351,9 +351,12 @@ function Electronics({ info }) {
           />
           <button type="submit">Submit</button>
         </form>
+        </div>
 
+        
         {updateForm._id && (
           <>
+          <div className="updat">
             <h1>Update</h1>
             <div className="formAdmin">
               <form onSubmit={updateProduct}>
@@ -379,11 +382,13 @@ function Electronics({ info }) {
                   onChange={handleUpdateFieldChange}
                 />
                 <button type="submit">Submit</button>
+                
               </form>
+              </div>
             </div>
           </>
         )}
-      </div>
+    
 
       <div className="mainProduct">
         {Array.isArray(products) && products.length > 0 ? (
