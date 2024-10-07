@@ -21,7 +21,7 @@
 
 import React from 'react';
 
-function Product({ data }) {
+function Product({ data, deleteFunc, editFunc }) {
     return (
         <>   
     <div className='mainProduct'> 
@@ -36,8 +36,19 @@ function Product({ data }) {
 
     </div>
     <div className="bottom">
-            <div className='editBtn'>Edit</div>
-            <div className='deleteBtn'>Delete</div>
+            <button onClick={()=> {
+                editFunc(data)
+            }}
+            >
+                Edit{" "}
+            </button>
+            <button 
+            onClick={()=> {
+                deleteFunc(data._id)
+            }}
+            >
+                Delete{""}
+            </button>
         </div>
     </>
     );
