@@ -35,7 +35,7 @@ export const getProduct = async (req, res) => {
 export const createProduct =  async (req, res) => {
     const product = req.body; 
 
-    if (!product.name || !product.price || !product.image) {
+    if (!product.name || !product.price || !product.image || !product.description || !product.phone || !product.location ) {
         return res.status(400).json({ succes: false, message: "Please provide all fields"});
     }
 
