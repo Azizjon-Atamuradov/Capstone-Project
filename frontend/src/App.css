@@ -116,3 +116,23 @@ form {
 .slogan:hover {
  background-color: cornflowerblue;
 }
+
+.gift {
+    border: solid red;
+    height: 100px;
+    margin: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gift_icon {
+    color: red;
+    font-size: 65px;
+
+} 
+.gift_dollar {
+    color: red;
+    font-size: 65px;
+
+} 

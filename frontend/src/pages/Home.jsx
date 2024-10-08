@@ -2,11 +2,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
+import { FiGift } from "react-icons/fi";
+import { BiDollarCircle } from "react-icons/bi";
 
 function Home() {
   return (
-    <> 
+    
+    <div className="hom">   
     <div className='slogan'>Shop Smart, Shop AzzEx!</div>
+
+    <div className="gift"> 
+        <div><FiGift  className='gift_icon' /> </div> 
+        <p> Gift Card <br /> 777</p>
+        <div><BiDollarCircle className='gift_dollar'/> </div>
+        </div>
+   
    
     <div className="Home">
       <h1>Welcome to the Home Page</h1>
@@ -68,7 +78,8 @@ function Home() {
         </Carousel.Item>
       </Carousel>
     </div>
-  </>
+    </div>
+  
   )
 }
 
