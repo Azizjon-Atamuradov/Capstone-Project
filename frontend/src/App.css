@@ -15,10 +15,12 @@ header {
 .navbar {
     border: solid red;
     display: flex;
-    justify-content: space-evenly;
-    width: 40vw;
+    /* justify-content: space-evenly; */
+    width: 60vw;
     border-radius: 60px;
-    margin-left: 460px;
+    margin-left: 250px;
+    
+    
     
 
 }
@@ -96,4 +98,21 @@ form {
     margin: 2em;
     
 
+}
+.searchBar {
+    border: solid blue;
+    height: 50px;
+    margin: 2em;
+    border-radius: 5px;
+    padding-top: 2em;
+}
+.slogan {
+    margin: 2em;
+    border: solid steelblue;
+    padding: 1em;
+    border-radius: 20px;
+
+}
+.slogan:hover {
+ background-color: cornflowerblue;
 }

@@ -113,7 +113,10 @@ import Home from "./pages/Home";
 import Appliances from "./pages/Appliances";
 import Clothing from "./pages/Clothing";
 import Nav from "./components/Nav";
-import Header from "./components/Header"; // Ensure the file name matches
+import Header from "./components/Header";  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
+
 
 function App() {
   const [products, setProducts] = useState([]);
