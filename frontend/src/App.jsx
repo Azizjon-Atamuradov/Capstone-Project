@@ -109,7 +109,7 @@ import { Route, Routes } from "react-router-dom";
 import axios from 'axios';
 
 import Electronics from "./pages/Electronics";
-import Home from "./pages/Home";
+//import Home from "./pages/Home";
 import Appliances from "./pages/Appliances";
 import Clothing from "./pages/Clothing";
 import Nav from "./components/Nav";
@@ -124,8 +124,8 @@ function App() {
   const getProducts = async () => {
     try {
       const response = await axios.get("http://localhost:5000/api/products");
-      console.log(response); // Log the entire response
-      setProducts(response.data.data); // Adjust based on actual response structure
+      console.log(response);  
+      setProducts(response.data.data);  
     } catch (error) {
       console.log(error);
     }
@@ -140,7 +140,7 @@ function App() {
       <Header />
       <Nav />
       <Routes>
-        <Route path="/home" element={<Home info={products} />} />
+        {/* <Route path="/home" element={<Home info={products} />} /> */}
         <Route path="/electronics" element={<Electronics info={products} />} />
         <Route path="/appliances" element={<Appliances />} />
         <Route path="/clothing" element={<Clothing />} />
@@ -151,5 +151,5 @@ function App() {
 
 export default App;
 
-////// 4 variant 
+//////  variant 
  
