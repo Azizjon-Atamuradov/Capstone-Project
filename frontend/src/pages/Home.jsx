@@ -4,12 +4,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
 import { FiGift } from "react-icons/fi";
 import { BiDollarCircle } from "react-icons/bi";
+import { RiCopyrightFill } from "react-icons/ri";
 
 function Home() {
   return (
     
     <div className="hom">   
     <div className='slogan'>Shop Smart, Shop AzzEx!</div>
+    
 
     <div className="gift"> 
         <div><FiGift  className='gift_icon' /> </div> 
@@ -19,10 +21,10 @@ function Home() {
    
    
     <div className="Home">
-      <h1>Welcome to the Home Page</h1>
+      
       
       <Carousel>
-        {/* First Video Slide */}
+      
         <Carousel.Item>
           <video
             className="d-block w-100"
@@ -35,12 +37,12 @@ function Home() {
             Your browser does not support the video tag.
           </video>
           <Carousel.Caption>
-            <h3>First Video</h3>
-            <p>Some description for the first video.</p>
+           
+            <p>AzzEx</p>
           </Carousel.Caption>
         </Carousel.Item>
 
-        {/* Second Video Slide */}
+      
         <Carousel.Item>
           <video
             className="d-block w-100"
@@ -53,8 +55,8 @@ function Home() {
             Your browser does not support the video tag.
           </video>
           <Carousel.Caption>
-            <h3>Second Video</h3>
-            <p>Some description for the second video.</p>
+           
+            <p>AzzEx</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -72,11 +74,21 @@ function Home() {
             Your browser does not support the video tag.
           </video>
           <Carousel.Caption>
-            <h3>Third Video</h3>
-            <p>Some description for the third video.</p>
+           
+            <p>AzzEx</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <div className='foot'>
+
+<p><RiCopyrightFill className='foot_icon' /> 2024 AzzEx Inc.</p>
+<p>About</p> 
+<p>All Rights Reserved </p>
+<p>Privacy </p> 
+
+
+
+</div>
     </div>
     </div>
   

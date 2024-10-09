@@ -11,7 +11,8 @@ import Clothing from "./pages/Clothing";
 import Nav from "./components/Nav";
 import Header from "./components/Header";  
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
+ 
+import Brands from "./pages/Brands";
 
 
 function App() {
@@ -38,10 +39,12 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/home" element={<Home info={products} />} />
+        <Route path="/brands" element={<Brands/>} />
         <Route path="/electronics" element={<Electronics setProducts={setProducts} products={products} />} />
         <Route path="/appliances" element={<Appliances setProducts={setProducts} products={products} />} />
         <Route path="/clothing" element={<Clothing setProducts={setProducts} products={products}/>} />
       </Routes>
+     
     </>
   );
 }

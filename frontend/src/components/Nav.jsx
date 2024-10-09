@@ -12,6 +12,10 @@ function Nav() {
         Home
     </Link>
 
+    <Link to="/brands">
+       Brands
+    </Link>
+
 
     <Link to="/electronics">
         Electronics
