@@ -17,18 +17,18 @@ function Nav() {
     </Link>
 
 
-    <Link to="/electronics">
-        Electronics
+    <Link to="/Products">
+        Products
     </Link>
 
 
-    <Link to="/appliances">
-        Appliances
+    <Link to="/about">
+        About
     </Link>
 
 
-    <Link to="/clothing">
-        Clothing
+    <Link to="/contact">
+        Contact
     </Link>
 
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Product from '../components/Product';
 
-function Appliances({ products, setProducts }) {
+function Products({ products, setProducts }) {
 
   
   const [searchQuery, setSearchQuery] = useState('');
@@ -264,7 +264,5 @@ function Appliances({ products, setProducts }) {
   );
 }
 
- 
+export default Products;
 
-
-export default Appliances

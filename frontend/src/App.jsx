@@ -4,10 +4,10 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import axios from 'axios';
 
-import Electronics from "./pages/Electronics";
+import Products from "./pages/Products";
 import Home from "./pages/Home";
-import Appliances from "./pages/Appliances";
-import Clothing from "./pages/Clothing";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 import Header from "./components/Header";  
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,9 +40,9 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home info={products} />} />
         <Route path="/brands" element={<Brands/>} />
-        <Route path="/electronics" element={<Electronics setProducts={setProducts} products={products} />} />
-        <Route path="/appliances" element={<Appliances setProducts={setProducts} products={products} />} />
-        <Route path="/clothing" element={<Clothing setProducts={setProducts} products={products}/>} />
+        <Route path="/Products" element={<Products setProducts={setProducts} products={products} />} />
+        <Route path="/about" element={<About setProducts={setProducts} products={products} />} />
+        <Route path="/contact" element={<Contact setProducts={setProducts} products={products}/>} />
       </Routes>
      
     </>
