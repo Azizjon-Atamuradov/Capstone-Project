@@ -8,7 +8,7 @@ function Product({ data, deleteFunc, editFunc }) {
       <div className='mainProduct'> 
         <div className='productContainer'>
           <img className="productPic" src={data.image} alt={data.name} />
-          <h3>{data.name}</h3>
+          <h5>{data.name}</h5>
           <h6>Price: ${data.price}</h6>
           <h6>{data.description}</h6>
           <h6>{data.phone}</h6>
