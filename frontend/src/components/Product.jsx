@@ -17,10 +17,10 @@ function Product({ data, deleteFunc, editFunc }) {
         </div>
       </div>
       <div className="bottom">
-        <button onClick={() => editFunc(data)}>
+        <button className='neon' onClick={() => editFunc(data)}>
           Edit
         </button>
-        <button onClick={() => deleteFunc(data._id)}>
+        <button className='btn_delete' onClick={() => deleteFunc(data._id)}>
           Delete
         </button>
       </div>

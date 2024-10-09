@@ -174,7 +174,7 @@ function Products({ products, setProducts }) {
             placeholder="Enter Location"
             onChange={updateCreateFormField}
           />
-          <button type="submit">Submit</button>
+          <button className='btn_sub'   type="submit">Submit</button>
         </form>
            
 
@@ -230,7 +230,7 @@ function Products({ products, setProducts }) {
                   placeholder="Enter Loation"
                   onChange={handleUpdateFieldChange}
                 />
-                <button type="submit">Submit</button>
+                <button className='btn_sub' type="submit">Submit</button>
               </form>
             </div>
             </div>
@@ -244,7 +244,7 @@ function Products({ products, setProducts }) {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button className='btn_sub_seacrh' onClick={handleSearch}>Search</button>
       </div>
 
       <div className="mainProduct">
