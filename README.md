@@ -17,7 +17,7 @@ AzzEx is a web application that allows users to buy and sell products seamlessly
 
 - **React**: 
   - Utilized for building a responsive and dynamic user interface. Components like Header, Listings, and Footer were created to organize the UI. 
-  - React Hooks (useState, useEffect, useContext) are employed for state management and lifecycle methods.
+  - React Hooks (useState, useEffect,  ) are employed for state management and lifecycle methods.
 
 - **React Router**: 
   - Used for navigating between different pages (Home, Listings, About Us).
@@ -89,7 +89,7 @@ AzzEx is a web application that allows users to buy and sell products seamlessly
 
 1. Clone the repository and navigate to the `frontend` folder.
 2. Run `npm install` to install dependencies.
-3. Use `npm start` to launch the development server.
+3. Use `npm run dev` to launch the development server.
 
 ### Backend Setup
 
@@ -102,17 +102,11 @@ AzzEx is a web application that allows users to buy and sell products seamlessly
 - MongoDB connection is established in `config/db.js`.
 - Mongoose models are defined for User and Product.
 
-## Future Enhancements
-
-- **Payment Integration**: Integrate with payment gateways like Stripe for secure transactions.
-- **User Profile**: Enable users to update profile details and view their transaction history.
-- **Admin Panel**: Create a dashboard for managing products and user accounts.
-- **Email Notifications**: Implement order confirmation and updates via email.
-- **Third-party API Integration**: Enhance functionality with external services for improved user experience.
+ 
 
 ## Folder Structure
 
-```plaintext
+ 
 Capstone/
 ├── backend/
 │   ├── config/
