@@ -1,31 +1,119 @@
 #root {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 2rem; 
-    text-align: center;
-     
-   
-   
+
+    
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    
   }
+  
+
+
+
 header {
     font-size: 30px;
-    margin-bottom: 1em;
+    color: red;
+    margin-top: 1em;
+    text-align: center;
+}
+.slogan {
+    
+    color: white;
+    margin-bottom: 2em;
+    text-align: center;
+   
 
 }
-
-.navbar {
-    border: solid red;
-    display: flex;
-    /* justify-content: space-evenly; */
+.nav {
+    border: solid white;
+    border-radius: 5px;
+    margin-top: 5em;
     width: 60vw;
-    border-radius: 60px;
-    margin-left: 250px;
+    margin-left: 270px;
+    
+}
+.navbar {
+    /* border: solid white; */
+    width: 60vw;
+    margin-left: 10px;
+    margin-right: 10PX;
+    border-radius: 5px;
     
     
-    
-
+}
+.gift {
+    border: solid lime;
+    height: 100px;
+    margin: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5.5em;
 }
 
+.gift_icon {
+    color: lime;
+    font-size: 65px;
+
+} 
+.giftCard {
+    color: lime;
+    text-align: center;
+}
+.gift_dollar {
+    color: lime;
+    font-size: 65px;
+
+} 
+.foot {
+   color: white;
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.pop {
+    color: white;
+    margin: 2em;
+    text-align: center;
+}
+.brandsContainer {
+    border: solid white;
+    margin-top: 2em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.formMajor {
+    border: solid hsl(317 100% 54%);
+    margin: 2em;
+    text-align: center;
+     
+}
+.upd{
+ 
+    border: solid hsl(317 100% 54%);
+    margin: 2em;
+    text-align: center;
+} 
+
+.searchBar {
+    border: solid blueviolet;
+    height: 80px;
+    margin: 2em;
+    border-radius: 5px;
+    padding-top: 10px;
+    text-align: center;
+     
+}
+
+ 
 
 .dashTitle {
     border: solid blue;
@@ -33,7 +121,7 @@ header {
 }
 
 .productContainer {
-    border: solid green;
+    border: solid #14f7ff;
     /* height: 250px; */
     margin-top: 2em;
     width: 210px;
@@ -41,6 +129,8 @@ header {
     border-radius: 10px;
     padding: 3px;
     transition: 0.2s;
+    color: white;
+    text-align: center;
      
 }
 .productContainer:hover {
@@ -60,7 +150,9 @@ width: 200px;
   
    display: flex;
    flex-wrap: wrap;
-   padding: 8px;
+   padding: 12px;
+   justify-content: center;
+    
  
 }
  
@@ -85,83 +177,21 @@ width: 200px;
     font-size: 14px;
     color:red;
 }
-.formMajor {
-    border: solid purple;
-    margin: 2em;
-    
-     
-}
+
 form {
     margin: 1em;
 }
 
-.upd{
+
+
+
  
-    border: solid green;
-    margin: 2em;
-    
 
-}
-.searchBar {
-    border: solid blue;
-    height: 80px;
-    margin: 2em;
-    border-radius: 5px;
-    padding-top: 10px;
-    
-    
-}
-.slogan {
-    margin: 2em;
-    border: solid steelblue;
-    padding: 1em;
-    border-radius: 20px;
 
-}
 
-.slogan:hover {
- background-color: cornflowerblue;
-}
 
-.gift {
-    border: solid red;
-    height: 100px;
-    margin: 2em;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-.gift_icon {
-    color: red;
-    font-size: 65px;
 
-} 
-
-.gift_dollar {
-    color: red;
-    font-size: 65px;
-
-} 
-
-.foot {
-    border: solid black;
-    margin-top: 4em;
-    display: flex;
-    justify-content: space-around;
-    font-size: 15px;
-}
-
-.brandsContainer {
-    border: solid red;
-    margin-top: 2em;
-    padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
 .pic {
    
     width: 170px;
@@ -169,9 +199,7 @@ form {
     
 }
 
-.pop {
-    margin-top: 2em;
-}
+ 
 
 .brand {
     border: solid black;
@@ -198,6 +226,7 @@ form {
     position: relative;
     z-index: 0;
     border-radius: 12px;
+    margin-top: 2em;
    
 
 }
@@ -331,5 +360,34 @@ border-radius: 10px;
     }
 
 
- /* btn edit delete */
+.aboutPage {
+    border: solid white;
+    margin: 1em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin: 2em;
+} 
+  
  
+
+.about {
+    color: white;
+    text-align: center;
+    margin: 2em;
+} 
+.aboutImage {
+    width: 450px;
+    height: 300px;
+    margin: 2em;
+    margin-left: 160px;
+}
+.contactPage {
+    color: white;
+    text-align: center;
+    margin: 2em;
+    border: solid white;
+    padding: 1em;
+    width: 300px;
+    margin-left: 250px;
+}

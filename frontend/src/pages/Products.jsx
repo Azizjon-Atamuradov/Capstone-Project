@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Product from '../components/Product';
 
+
 function Products({ products, setProducts }) {
 
   
@@ -124,7 +125,7 @@ function Products({ products, setProducts }) {
       
       {isLoading && <div>Loading...</div>}
       <div className="formMajor">
-        <p>Create A New Product</p>
+        <p className='neon-button'>Create A New Product </p>
         <form onSubmit={createProduct}>
           <input
             type="url"
@@ -186,7 +187,7 @@ function Products({ products, setProducts }) {
           
           <div className="upd">
             <div className="formAdmin">
-            <p>Edit</p>
+            <p className='neon-button'>Edit</p>
               <form onSubmit={updateProduct}>
                 <input
                   type="url"

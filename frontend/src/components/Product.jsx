@@ -1,4 +1,4 @@
- 
+
 
 import React from 'react';
 
@@ -17,12 +17,19 @@ function Product({ data, deleteFunc, editFunc }) {
         </div>
       </div>
       <div className="bottom">
+
         <button className='neon' onClick={() => editFunc(data)}>
           Edit
         </button>
-        <button className='btn_delete' onClick={() => deleteFunc(data._id)}>
+       
+        <button className='neon' onClick={() => deleteFunc(data._id)}>
           Delete
         </button>
+
+
+
+           
+        
       </div>
     </>
   );

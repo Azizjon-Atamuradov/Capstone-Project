@@ -10,12 +10,12 @@ function Home() {
   return (
     
     <div className="hom">   
-    <div className='slogan'>Shop Smart, Shop AzzEx!</div>
+   
     
 
     <div className="gift"> 
         <div><FiGift  className='gift_icon' /> </div> 
-        <p> Gift Card <br /> 777</p>
+        <p className='giftCard'> Gift Card <br /> 777 </p>
         <div><BiDollarCircle className='gift_dollar'/> </div>
         </div>
    

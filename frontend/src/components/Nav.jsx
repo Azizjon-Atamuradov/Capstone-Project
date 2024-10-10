@@ -5,8 +5,11 @@ import {Link} from 'react-router-dom'
 function Nav() {
   return (
    <>
+   <div className='nav'> 
+   <div className='navbar'>  
    
-   <div className="navbar">
+
+   
 
     <Link to="/home">
         Home
@@ -33,10 +36,10 @@ function Nav() {
 
 
 
+    </div>
 
-
-   </div>
    
+    </div>
    
    
    
